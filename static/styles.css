@@ -8,13 +8,15 @@
 }
 
 body {
+ 
   padding: 10% 5%;
-  background: #0f2027;
-  background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+  background: #2de9f6;
+  background: linear-gradient(to right,#3693bb, #126e8d, #04415c);
   justify-content: center;
   align-items: center; 
   height: 100vh;
   color: #fff;
+ 
 }
 
 .form__label {

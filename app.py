@@ -9,12 +9,15 @@ import pickle
 warnings.filterwarnings('ignore')
 from feature import FeatureExtraction
 
+
 file = open("pickle/model.pkl","rb")
 gbc = pickle.load(file)
 file.close()
 
 
 app = Flask(__name__)
+
+
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -36,4 +39,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=10000)
